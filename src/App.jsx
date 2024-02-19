@@ -1,5 +1,5 @@
-import {ThemeProvider} from 'styled-components'
-import { darkTheme, lightTheme } from './style/theme'
+import { ThemeProvider } from "styled-components"
+import { darkTheme, lightTheme } from "./style/theme"
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
         <h1>Hello World</h1>
       </Screen>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
