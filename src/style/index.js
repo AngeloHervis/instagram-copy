@@ -9,4 +9,13 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         transition: 0.3s ease;
     }
+`;
+
+    export const Screen = styled.div`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color: ${(props) => props.theme.primary}
     `
