@@ -1,8 +1,9 @@
-import { ThemeProvider } from "styled-components"
-import { darkTheme, lightTheme } from "./style/theme"
+import React from 'react';
+import { ThemeProvider } from "styled-components";
+import { darkTheme, lightTheme } from "./style/theme";
+import { Screen } from "./style/index";
 
 function App() {
-
   return (
     <ThemeProvider theme={darkTheme}>
       <Screen>

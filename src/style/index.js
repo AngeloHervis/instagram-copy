@@ -1,5 +1,4 @@
-import { createGlobalStyle } from "styled-components";
-
+import styled, { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -17,5 +16,5 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: row;
     align-items: start;
-    background-color: ${(props) => props.theme.primary}
+    background-color: ${(props) => props.theme.primary};
     `
