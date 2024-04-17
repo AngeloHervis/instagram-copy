@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css} from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-    export const Screen = styled.div`
+export const Screen = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
@@ -19,22 +19,22 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.primary};
     `;
 
-    export const Flez = styled.div `
+export const Flex = styled.div`
     position: relative;
     display: flex;
     width: 100%;
     
 
-    ${(props) => css `
+    ${(props) => css`
     flex-direction: ${props.direction || "column"};
     align-items: ${props.align || "center"};
     justify-content: ${props.justify || "center"};
-    gap: ${ props.gap || "12px"};
+    gap: ${props.gap || "12px"};
     padding: ${props.padding || ""};
     `}
     `;
 
-    export const Typography = styled.p`
+export const Typography = styled.p`
     ${(props) => css`
     font-style: ${props.Style || "normal"};
     font-weight: ${props.weight || "500"};
@@ -44,12 +44,12 @@ export const GlobalStyle = createGlobalStyle`
     `}
     `;
 
-    export const Spacer = styled.div`
+export const Spacer = styled.div`
     width: 100%;
     margin: ${(props) => props.margin || "20px"};
     `
 
-    export const Button = styled.button`
+export const Button = styled.button`
     background-color: transparent;
     border: none;
     cursor: pointer;
