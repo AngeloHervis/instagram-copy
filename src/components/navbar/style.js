@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
     width: 338px;
     height: 100vh;
@@ -16,7 +17,7 @@ ${(props) => css`
 `}
 `;
 
-export const Btntheme = styled.button`
+export const BtnTheme = styled.button`
     background-color: transparent;
     border: none;
     font-size: 24px;
