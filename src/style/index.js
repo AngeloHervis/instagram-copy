@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css} from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -17,4 +17,44 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: row;
     align-items: start;
     background-color: ${(props) => props.theme.primary};
+    `;
+
+    export const Flez = styled.div `
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+
+    ${(props) => css `
+    flex-direction: ${props.direction || "column"};
+    align-items: ${props.align || "center"};
+    justify-content: ${props.justify || "center"};
+    gap: ${ props.gap || "12px"};
+    padding: ${props.padding || ""};
+    `}
+    `;
+
+    export const Typography = styled.p`
+    ${(props) => css`
+    font-style: ${props.Style || "normal"};
+    font-weight: ${props.weight || "500"};
+    font-size: ${props.size || "18px"};
+    line-height: ${props.height || "21px"};
+    color: ${props.theme.textPrimary};
+    `}
+    `;
+
+    export const Spacer = styled.div`
+    width: 100%;
+    margin: ${(props) => props.margin || "20px"};
     `
+
+    export const Button = styled.button`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+    &:hover{
+        opacity: 0.8s
+    }
+    `;

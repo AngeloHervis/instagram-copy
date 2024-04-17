@@ -7,7 +7,10 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Screen>
-        <h1>Hello World</h1>
+        <Flex direction="row" justify="space-between">
+          <h1>Hello World</h1>
+          <h2>Hello World</h2>
+        </Flex>
       </Screen>
     </ThemeProvider>
   );
