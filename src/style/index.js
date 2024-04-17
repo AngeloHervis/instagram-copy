@@ -55,6 +55,10 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     
     &:hover{
-        opacity: 0.8s
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.6;
     }
     `;
