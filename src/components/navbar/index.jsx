@@ -1,8 +1,7 @@
 import React from "react";
 import {BsSun} from "react-icons/bs";
 import * as C from "./style";
-import { Flex } from "../../style";
-
+import { Flex } from "../../style/index";
 
 export function NavBar() {
     return <C.Container>
