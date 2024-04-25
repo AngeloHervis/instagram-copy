@@ -4,7 +4,7 @@ import {FiSend} from "react-icons/fi";
 import {MdMonitor} from "react-icons/md";
 import {BsGear} from "react-icons/bs";
 import {BsSun} from "react-icons/bs";
-import {BiMoon} from "react-icons/bi";
+import {BiMoon, BiExit} from "react-icons/bi";
 import {Typography} from "../../style";
 import {Spacer} from "../../style";
 import LogoInstagram from "../../assets/logo-instagram.svg";
@@ -84,6 +84,14 @@ export function NavBar({themeToggler, theme}) {
 
     <Spacer/>
     <C.Divider/>
+
+    <Flex align="start">
+       
+            <C.ListIcon>
+                <BiExit/>
+                <Typography>Sair</Typography>  
+        </C.ListIcon>
+    </Flex>
     </C.Container>
     );
 }
