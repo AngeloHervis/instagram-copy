@@ -69,3 +69,9 @@ export const ListIcon = styled.li`
         opacity: 0.7;
     }
 `;
+
+export const Divider = styled.div`
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid ${(props) => props.theme.divider};
+`;

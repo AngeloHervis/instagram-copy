@@ -80,8 +80,10 @@ export function NavBar({themeToggler, theme}) {
                 <Typography>{menu.menuName}</Typography>  
         </C.ListIcon>
         ))}   
-
     </Flex>
+
+    <Spacer/>
+    <C.Divider/>
     </C.Container>
     );
 }
